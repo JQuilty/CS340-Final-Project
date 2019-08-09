@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>My Page</title>
+</head>
+<body>
+<p>
+<ul>
+  <li><a href="index">Index</a></li>
+  <li><a href="characters">Characters</a></li>
+  <li><a href="vehicles">Vehicles</a></li>
+  <li><a href="planets">Planets</a></li>
+  <li><a href="factions">Factions</a></li>
+  <li><a href="p_faction">Planet/Factions</a></li>
+</ul></p>
+
+
+<form>
+    <label>Enter a new entry</label>
+    <p>Name:
+        <input type="text" name="pName_input" id="pName_input"></input> 
+    </p>  
+    
+    <p>Population:
+        <input type="number" name="pPopulation_input" id="pPopulation_input"></input>
+    </p>  
+    
+    <p>Environment: 
+        <input type="text" name="pEnvironment_input" id="pEnvironment_input"></input>
+    </p>  
+    <input type="submit" value="Submit" id="addBtn">
+</form>
+
+<table>
+ <caption>Planets</caption>
+ <thead>
+  <tr>
+   <th> Name
+   <th> Population
+   <th> Environment
+ <tbody id = 'rowContainer'>
+</table>
+
+<script src="/js/swDBplan.js"></script>
+
+</body>
+</html>

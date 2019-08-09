@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<title>My Page</title>
+</head>
+<body>
+
+<p>
+<ul>
+  <li><a href="index">Index</a></li>
+  <li><a href="characters">Characters</a></li>
+  <li><a href="vehicles">Vehicles</a></li>
+  <li><a href="planets">Planets</a></li>
+  <li><a href="factions">Factions</a></li>
+  <li><a href="p_faction">Planet/Factions</a></li>
+</ul>
+</p>
+
+<div class="charDiv">
+<form>
+    <label>Enter a new entry</label>
+    <p>Name:
+        <input type="text" name="cName_input" id="cName_input"></input> 
+    </p>  
+    
+    <p>Faction:
+        <select name="cFaction_input" id="cFaction_input"> 
+            
+            <option value = "-1" name = "none" > None</option>  
+            {{#each fList}}
+            <option value = "{{this.id}}"> {{this.name}}</option>
+            {{/each}}
+        </select>
+    </p>  
+    
+    <p>Origin:
+        <select name="cOrigin_input" id="cOrigin_input"> 
+            {{#each pList}}
+            <option value = "{{this.id}}"> {{this.name}}</option>
+            {{/each}}
+        </select>
+    </p>  
+    
+    <p>Role:
+        <input type="text" name="cRole_input" id="cRole_input"></input> 
+    </p>  
+    
+    <input type="submit" value="Submit" id="addBtn">
+</form>
+</div>
+
+<div class="charDiv">
+<form>
+    <label>Filter by:</label>
+     <p>Name:
+        <input id = "name_Filter" type="text"></input> 
+    <input type="submit" value="Filter" id = "name_Fil_Btn">
+    <p>Faction:
+        <select id = "faction_Filter"> 
+            <option value = "-1" name = "none" > None</option>  
+            {{#each fList}}
+            <option value = "{{this.id}}"> {{this.name}}</option>
+            {{/each}} 
+    </p>  
+    <input type="submit" value="Filter" id = "faction_Fil_Btn">
+    <p>Origin:
+        <select  id = "origin_Filter"> 
+            {{#each pList}}
+            <option value = "{{this.id}}"> {{this.name}}</option>
+            {{/each}}
+    </p>  
+    <input type="submit" value="Filter" id = "origin_Fil_Btn">
+    <p>Role:
+        <input type="text" id = "role_Filter"></input> 
+    <input type="submit" value="Filter" id = "role_Fil_Btn">
+    </p> 
+
+    <p>     
+    <button id="reset_Filter"> Clear Filters </button>
+    </p>
+
+</form> 
+</div> 
+
+ <table class="columnAfter">
+ <caption>Characters</caption>
+ <thead>
+  <tr>
+   <th> Name
+   <th> Faction
+   <th> Origin
+   <th> Role
+ <tbody id="rowContainer">
+ </tbody>
+</table>
+
+<script src="/js/swDBchar.js"></script>
+
+</body>
+</html>

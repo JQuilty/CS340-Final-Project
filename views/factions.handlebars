@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>My Page</title>
+</head>
+<body>
+<p>
+<ul>
+  <li><a href="index">Index</a></li>
+  <li><a href="characters">Characters</a></li>
+  <li><a href="vehicles">Vehicles</a></li>
+  <li><a href="planets">Planets</a></li>
+  <li><a href="factions">Factions</a></li>
+  <li><a href="p_faction">Planet/Factions</a></li>
+</ul></p>
+
+<form>
+    <label>Enter a new entry</label>
+    <p>Name:
+        <input type="text" id="fName_input"></input> 
+    </p>  
+    
+    <p>Goal:
+        <input type="text" id="fGoal_input"></input>
+    </p>  
+    
+    <p>Size: 
+        <input type="number" id="fSize_input"></input>
+    </p>  
+  
+    <input type="submit" value="Submit" id = "addBtn">
+</form>
+
+<table class = "columnAfter">
+ <caption>Factions</caption>
+ <thead>
+  <tr>
+   <th> Name
+   <th> Goal
+   <th> Size
+ <tbody id = "rowContainer">
+</table>
+
+<script src="/js/swDBfact.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+@font-face {
+  font-family: SwFont;
+  src: url("/fonts/SFDistantGalaxyAlternate-It.ttf");
+}
+
+@font-face {
+  font-family: SwBasic;
+  src: url("/fonts/anakinmono.ttf");
+}
+
+body {
+  background-image: url("/images/stars.png");
+  background-size: 600px 600px;
+  color: white;  
+  font-family: SwBasic;
+  font-size: 22px;
+  background-color: #222;
+  border-radius: 5px; 
+  padding: 10px;
+  }
+
+
+button {
+  background-color:#111;
+  border-radius:4px;
+  border:2px solid white;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-family:SwBasic;
+  padding: 5px 10px;
+  font-size: 22px;
+}
+
+.indexP {
+background-color: #222;
+border-radius: 5px; 
+padding: 10px;
+margin-right: 6%;
+margin-left: 6%;
+}
+
+.indexTitle {
+  text-align: center;
+  margin-top: 40px;
+  background-color: #222;
+  border-radius: 5px; 
+  padding: 10px;
+  margin-right: 35%;
+  margin-left: 35%;
+}
+
+
+input {
+  background-color:#111;
+  border-radius:4px;
+  border:2px solid white;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-family:SwBasic;
+  padding: 5px 10px;
+  font-size: 22px;
+  background-color: #222;
+  border-radius: 5px; 
+  padding: 10px;
+}
+
+select {
+  background-color:#111;
+  border-radius:4px;
+  border:2px solid white;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-family:SwBasic;
+  padding: 5px 10px;
+  font-size: 22px;
+  background-color: #222;
+  border-radius: 5px; 
+  padding: 10px;
+}
+
+button:hover {
+  background-color:#555;
+}
+
+ul {
+  font-family: SwFont;
+  list-style-type: none;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ffd800;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #333;
+}
+
+.active {
+  background-color: #555;
+}
+
+table{ 
+  text-align: center;
+  position: relative; 
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color: black; 
+  background-opacity: 25%;
+  width: 80%;
+  margin-top: 40px;
+  background-color: #222;
+  border-radius: 5px; 
+  padding: 10px;
+}
+
+th{
+  font-size: 26px;
+  background-color: #111;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form{
+  margin-top: 40px;
+  background-color: #222;
+  border-radius: 5px; 
+  padding: 10px;
+  width: fit-content;
+}
+
+.charDiv {
+  position: relative; 
+  float: left; 
+  width: 600px;
+}
+
+.columnAfter{
+  clear: both;
+}
+
+h1{
+  background-color: #222;
+  border-radius: 5px; 
+  padding: 10px;
+}
+
+caption{
+background-color: #111;
+  border-radius: 5px; 
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 26px;
+}

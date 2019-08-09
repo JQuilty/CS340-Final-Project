@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<title>My Page</title>
+</head>
+<body>
+<p>
+<ul>
+  <li><a href="index">Index</a></li>
+  <li><a href="characters">Characters</a></li>
+  <li><a href="vehicles">Vehicles</a></li>
+  <li><a href="planets">Planets</a></li>
+  <li><a href="factions">Factions</a></li>
+  <li><a href="p_faction">Planet/Factions</a></li>
+</ul></p>
+
+<form>
+    <label>Enter a new entry</label>
+    <p>Planet: 
+    <select id="PlanetID_input"> 
+            {{#each pList}}
+            <option value = "{{this.id}}"> {{this.name}}</option>
+            {{/each}}
+        </select>
+    </p>
+
+    <p>Faction:
+        <select id="FactionID_input"> 
+            {{#each fList}}
+            <option value = "{{this.id}}"> {{this.name}}</option>
+            {{/each}}
+        </select>
+    </p> 
+    
+    <input type="submit" value="Submit" id = "addBtn">
+</form>
+
+<table class="columnAfter">
+ <caption>Planet / Factions</caption>
+ <thead>
+  <tr>
+   <th> Planet
+   <th> Faction
+   <tbody id = "rowContainer">
+</table>
+
+<script src="/js/swDBplanfact.js"></script>
+
+</body>
+</html>
